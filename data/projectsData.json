@@ -1,0 +1,49 @@
+{
+    "projects" : [
+        {
+            "id": 0,
+            "project_name": "OOP-Game",
+            "description": "Random phrase guessing game",
+            "technologies": ["Vanilla JavaScript", "Object-Oriented Programming", "HTML", "CSS"],
+            "live_link": "https://saturn229.github.io/OOP-Game/",
+            "github_link": "https://github.com/saturn229/OOP-Game",
+            "image_urls": ["/static/imgs/OOP-Game/landingPage.png", "/static/imgs/OOP-Game/screen1.png", "/static/imgs/OOP-Game/screen2.png"]
+        },
+        {
+            "id": 1,
+            "project_name": "form-validation-jquery",
+            "description": "Sign up form using validation",
+            "technologies": ["Vanilla JavaScript", "RegEx", "HTML", "CSS", "Jquery"],
+            "live_link": "https://saturn229.github.io/Form-Validation-Jquery",
+            "github_link": "https://github.com/saturn229/Form-Validation-Jquery",
+            "image_urls": ["/static/imgs/form-validation-jquery/landing_page.png", "/static/imgs/form-validation-jquery/screen1.png", "/static/imgs/form-validation-jquery/screen2.png","/static/imgs/form-validation-jquery/validation.png"]
+        },
+        {
+            "id": 2,
+            "project_name": "Public-API-Request",
+            "description": "Employee directory that displays employee info on a card",
+            "technologies": ["Vanilla JavaScript", "fetch API", "HTML", "CSS", "REST API"],
+            "live_link": "https://saturn229.github.io/Public-API-Request",
+            "github_link": "https://github.com/saturn229/Public-API-Request",
+            "image_urls": ["/static/imgs/Public-API-Request/landing_page.png", "/static/imgs/Public-API-Request/screen1.png", "/static/imgs/Public-API-Request/screen2.png"]
+        },
+        {
+            "id": 3,
+            "project_name": "Pagination",
+            "description": "Directory that limits the number of users per page",
+            "technologies": ["Vanilla JavaScript", "Pagination", "HTML", "CSS"],
+            "live_link":  "https://saturn229.github.io/Pagination",
+            "github_link": "https://github.com/saturn229/Pagination",
+            "image_urls": ["/static/imgs/pagination/landing_page.png", "/static/imgs/pagination/screen1.png", "/static/imgs/pagination/screen2.png"]
+        },
+        {
+            "id": 4,
+            "project_name": "Quote-Generator",
+            "description": "Random quote generator",
+            "technologies": ["Vanilla JavaScript", "HTML", "CSS"],
+            "live_link": "https://saturn229.github.io/Random-Quote/",
+            "github_link": "https://github.com/saturn229/Random-Quote",
+            "image_urls": ["/static/imgs/Quote-generator/landing_page.png", "/static/imgs/Quote-generator/screen1.png", "/static/imgs/Quote-generator/screen2.png"]
+        }
+    ]
+}
