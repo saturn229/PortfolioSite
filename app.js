@@ -26,16 +26,47 @@ app.get('/projects/:id', (req, res, next) => {
     if (project) {
         res.render('projects', { project });
     } else {
-        const err = new Error();
+        const err = new Error('Not Found');
         err.status = 404;
         err.message = 'This Project Doesn\'t Exist!'
         next(err);
     }
 });
 
-
-
-app.listen(3000, () => {
-    console.log("The application is runnin on localhost 3000")
+app.get("/:id", (req, res, next)=>{
+    if (req.params.id === "about") {
+        res.render("about");
+    } else {
+        const err = new Error('Not Found');
+        err.status = 404;
+        console.error(`${err.status} Error: The page you are looking for was ${err.message}`);
+        next(err);
+    }
 });
 
+/**
+ *  handles any other routing errors
+*/
+app.get("/:id/:name", (req, res, next)=>{
+    const err = new Error('Not Found');
+    err.status = 404;
+    console.error(`${err.status} Error: The page you are looking for was ${err.message}`);
+    next(err);
+});
+
+/** renders the error page from the error.pug template */
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    res.status(err.status);
+    res.render('error');
+});
+
+
+
+app.listen(3000, (err) => {
+    if (!err) {
+        console.log(`Server is Running Correctly, and is Listening on port 3000`);
+    } else {
+        console.log('An Error Has Occurred and the Server Cannot Start', err);
+    }
+});
